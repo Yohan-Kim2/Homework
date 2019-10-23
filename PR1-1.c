@@ -8,8 +8,8 @@ void get_data(int* p); // 랜덤으로 1~100까지의 정수 10개를 만들어 해당 배열에 저
 void print_data(int* p); // 랜덤으로 받은 데이터를 실행 결과와 같이 출력한다.
 void print_SumAvg(int* p); // 합계를 구하고 이를 N_DATA로 나누어 평균을 구한다.
 int get_Min(int* p); // 최소점수를 구한다.
-int get_Max(int* p); // 최대점수를 구한다
-
+int get_Max(int* p); // 최대점수를 구한다.
+int get_Diff(int Max, int Min);
 
 int main()
 {
@@ -19,8 +19,10 @@ int main()
 	get_data(data);
 	print_data(data);
 	print_SumAvg(data);
+	int difference = get_Diff(get_Max(), get_Min());
 	printf("최고 점수: %d\n", get_Max(data));
 	printf("최저 점수: %d\n", get_Min(data));
+	printf("최고 점수와 최저 점수의 차이: %d\n", difference);
 
 	return 0;
 }
@@ -96,5 +98,11 @@ int get_Max(int* p)
 	return Max;
 
 
+}
+
+int get_Diff(int Max, int Min)
+{
+	int diff = Max - Min;
+	return diff;
 }
 
