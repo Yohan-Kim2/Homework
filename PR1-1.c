@@ -3,6 +3,8 @@
 #include <time.h>
 
 #define N_DATA 10
+//이 소스코드는 랜덤으로 숫자 10개를 받아 평균 , 최소, 최대값을 구하는 코드이다.
+
 
 void get_data(int* p); // 랜덤으로 1~100까지의 정수 10개를 만들어 해당 배열에 저장한다.
 void print_data(int* p); // 랜덤으로 받은 데이터를 실행 결과와 같이 출력한다.
