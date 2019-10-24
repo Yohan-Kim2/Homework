@@ -19,4 +19,5 @@ int get_Max(int* p)
 
 int get_Diff(int Max, int Min)
 최저 점수와 최고 점수의 차이를 계산하고 이를 반환한다
+//
 
